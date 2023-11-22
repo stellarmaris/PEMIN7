@@ -17,14 +17,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/login', function () {
+    return view('login');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
-Route::get('/coba', function () {
-    return view('coba');
+Route::get('/profile', function () {
+    return view('profile');
 });
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('/mail', function () {
+    return view('/mail/show');
+});
+
+Route::get('/contract', function () {
+    return view('/contract/show');
 });
