@@ -30,7 +30,7 @@ Route::get('/profile', function () {
 });
 
 Route::get('/mail', function () {
-    return view('/mail/show');
+    return view('/mail/index');
 });
 
 Route::get('/mail/add', function () {
