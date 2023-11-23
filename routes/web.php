@@ -33,6 +33,10 @@ Route::get('/mail', function () {
     return view('/mail/show');
 });
 
+Route::get('/mail/add', function () {
+    return view('/mail/create');
+});
+
 Route::get('/contract', function () {
     return view('/contract/show');
 });
