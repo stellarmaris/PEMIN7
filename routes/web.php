@@ -46,5 +46,17 @@ Route::get('/outmail/add', function () {
 });
 
 Route::get('/contract', function () {
-    return view('/contract/show');
+    return view('/contract/index');
+});
+
+Route::get('/contract/add', function () {
+    return view('/contract/create');
+});
+
+Route::get('/issue', function () {
+    return view('/issue/index');
+});
+
+Route::get('/issue/add', function () {
+    return view('/issue/create');
 });
