@@ -29,12 +29,20 @@ Route::get('/profile', function () {
     return view('profile');
 });
 
-Route::get('/mail', function () {
-    return view('/mail/index');
+Route::get('/inmail', function () {
+    return view('/in_mail/index');
 });
 
-Route::get('/mail/add', function () {
-    return view('/mail/create');
+Route::get('/inmail/add', function () {
+    return view('/in_mail/create');
+});
+
+Route::get('/outmail', function () {
+    return view('/out_mail/index');
+});
+
+Route::get('/outmail/add', function () {
+    return view('/out_mail/create');
 });
 
 Route::get('/contract', function () {
